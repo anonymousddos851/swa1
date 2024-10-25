@@ -6,7 +6,7 @@
             "version": "latest"
         }
     },
-    "postStartCommand": "python3 /workspaces/swa1/white.py",
+    "postStartCommand": "swa1=$(basename $(git rev-parse --show-toplevel)); python3 /workspaces/$swa1/white.py",
     "customizations": {
         "vscode": {
             "settings": {
@@ -18,4 +18,3 @@
         }
     }
 }
-
